@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
 	def create
 		@post = current_user.posts.build(params_post)
-		@post.category_id = params(:category_id)
+		@post.category_id = params[:category_id]
 		if @post.save
 			flash[:notice] = 'Post Succesfully Created'
 			redirect_to root_path
@@ -42,7 +42,7 @@ class PostsController < ApplicationController
 	private
 
 		def params_post
-			params.require(:post).permit(:title, :description, :author)
+			params.require(:post).permit(:title, :description, :author, :category_id)
 		end
 
 		def find_post

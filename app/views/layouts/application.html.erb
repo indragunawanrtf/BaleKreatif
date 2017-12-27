@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BaleKreatif</title>
-    <%= csrf_meta_tags %>
-    <%= favicon_link_tag 'b.png' %>
+<head>
+  <title>BaleKreatif</title>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'b.png' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
 
-  <body>
-    <%= render 'partial/navbar' %>
-    <% if controller.controller_name == "posts" && controller.action_name == "index" %>
-      <%= render 'partial/banner' %>
-    <% end %>
-    
-    <div class="container">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-        <%= yield %>
-    </div>
-    
-    <%= render 'partial/footer' %>
-  </body>
+<body>
+  <%= render 'partial/navbar' %>
+  <% if controller.controller_name == "posts" && controller.action_name == "index" %>
+  <%= render 'partial/banner' %>
+  <% end %>
 
-  <script type="script/javascripts">
-    $(".button-collapse").sideNav();
-    $( document ).ready(function)
-    $(".dropdown-button").dropdown();
-    $('.dropdown-button').dropdown('open');
-    $(document).ready(function() {
-      $('select').material_select();
-    });
-  </script>
+  <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </div>
+
+  <%= render 'partial/footer' %>
+</body>
+
+<script type="script/javascripts">
+  $(".button-collapse").sideNav();
+  $( document ).ready(function)
+  $(".dropdown-button").dropdown();
+  $('.dropdown-button').dropdown('open');
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
 </html>

@@ -6,7 +6,8 @@
           <div class="col s6 offset-s3">
             <div class="login-form">
               <div class="card hoverable">
-                <div class="card-content">
+                <div class="card-content blue-grey lighten-5">
+                  <center><%= image_tag("login.png") %></center>
                   <span class="card-title center"><h3><b>Log In</b></h3></span>
                   <center>Silakan Login</center>
                   <div class="divider"></div></br>
@@ -26,7 +27,7 @@
                     <%= f.check_box :remember_me %>
                     <%= f.label :remember_me %>
                   </div>
-                  <% end -%>
+                  <% end %>
 
                   <div class="actions center">
                     <%= f.submit "Log in", class: "btn waves-effect waves-light pink darken-1" %>
