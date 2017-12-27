@@ -11,9 +11,10 @@
   </head>
 
   <body>
-
     <%= render 'partial/navbar' %>
-    <%= render 'partial/banner' %>
+    <% if controller.controller_name == "posts" && controller.action_name == "index" %>
+      <%= render 'partial/banner' %>
+    <% end %>
     
     <div class="container">
       <p class="notice"><%= notice %></p>
