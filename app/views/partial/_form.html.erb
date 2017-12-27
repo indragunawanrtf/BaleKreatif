@@ -13,12 +13,9 @@
 									<%= simple_form_for @post do |p| %>
 
 									<div class="form-input row">
-										<div class="input-field">
-										<select>
-											<option value=""><%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %></option>
-										</select>
-										</div>
-										
+										<%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %>
+										<br>
+										<br>
 										<div class="input-field">
 											<%= p.input :title, autofocus: true %>
 										</div>
