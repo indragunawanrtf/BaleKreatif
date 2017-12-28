@@ -11,3 +11,12 @@
   <li><a href="#!">Panti Sosial</a></li>
   <li><a href="#!">Subuh Berjama'ah</a></li>
 </ul>
+
+<ul id="dropdown3" class="dropdown-content hover">
+  <li><%= link_to "Insert Berita", new_post_path %></li>
+  <% Category.all.each do |c| %>
+  <li>
+  	<%= link_to c.name, posts_path(category: c.name), class: "link" %>
+  </li>
+  <% end %>
+</ul>

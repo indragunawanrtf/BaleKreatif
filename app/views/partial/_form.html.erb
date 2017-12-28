@@ -10,7 +10,7 @@
 									<span class="card-title center"><h3><b>Posting Berita Baru</b></h3></span>
 									<div class="divider"></div></br>
 
-									<%= simple_form_for @post do |p| %>
+									<%= simple_form_for @post, :html => { :multipart => true } do |p| %>
 
 									<div class="form-input row">
 										<%= select_tag(:category_id, options_for_select(@categories), :prompt => "Select a category") %>
