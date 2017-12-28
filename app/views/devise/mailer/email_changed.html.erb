@@ -1,7 +1,15 @@
+<div class="nav-wrapper" style="background-color: #1e88e5; margin-bottom:40px; padding:10px 0" align="center" text="white">
+	<h1>Bale Kreatif</h1>
+</div>
+
 <p>Hello <%= @email %>!</p>
 
 <% if @resource.try(:unconfirmed_email?) %>
-  <p>We're contacting you to notify you that your email is being changed to <%= @resource.unconfirmed_email %>.</p>
+  <p>Kami menghubungi Anda bahwa email Anda sedang diubah <%= @resource.unconfirmed_email %>.</p>
 <% else %>
-  <p>We're contacting you to notify you that your email has been changed to <%= @resource.email %>.</p>
+  <p>Kami menghubungi Anda bahwa email Anda sedang diubah <%= @resource.email %>.</p>
 <% end %>
+
+<p>Enjoy!</p>
+
+<p>The Bale Kreatif Team</p>

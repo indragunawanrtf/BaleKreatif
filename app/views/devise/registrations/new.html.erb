@@ -20,15 +20,19 @@
                     </div>
 
                     <div class="input-field"></br>
-                      <%= f.label :password %></br>
+                      <%= f.input :name, label: "Nama Pengguna", autofocus: true %>
+                    </div>
+
+                    <div class="input-field"></br>
+                      <%= f.label "Katasandi" %></br>
                       <% if @minimum_password_length %>
-                      <em>(<%= @minimum_password_length %> characters minimum)</em>
+                      <em>(Minimal <%= @minimum_password_length %> Karakter)</em>
                       <% end %><br />
                       <%= f.password_field :password, autocomplete: "off" %>
                     </div>
 
                     <div class="input-field">
-                      <%= f.label :password_confirmation %><br />
+                      <%= f.label "Konfirmasi Katasandi" %><br />
                       <%= f.password_field :password_confirmation, autocomplete: "off" %>
                     </div>
 

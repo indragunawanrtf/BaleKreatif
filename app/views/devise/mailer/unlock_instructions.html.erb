@@ -1,7 +1,15 @@
+<div class="nav-wrapper" style="background-color: #1e88e5; margin-bottom:40px; padding:10px 0" align="center" text="white">
+	<h1>Bale Kreatif</h1>
+</div>
+
 <p>Hello <%= @resource.email %>!</p>
 
-<p>Your account has been locked due to an excessive number of unsuccessful sign in attempts.</p>
+<p>Akun Anda telah dikunci karena banyaknya upaya masuk yang tidak berhasil.</p>
 
-<p>Click the link below to unlock your account:</p>
+<p>Klik tautan di bawah ini untuk membuka kunci akun Anda:</p>
 
-<p><%= link_to 'Unlock my account', unlock_url(@resource, unlock_token: @token) %></p>
+<p><%= link_to 'Buka akun saya', unlock_url(@resource, unlock_token: @token) %></p>
+
+<p>Enjoy!</p>
+
+<p>The Bale Kreatif Team</p>

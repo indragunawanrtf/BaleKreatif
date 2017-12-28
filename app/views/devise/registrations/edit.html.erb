@@ -39,21 +39,21 @@
                   <% end %>
 
                   <div class="input-field">
-                    <%= f.label :password %> <i>biarkan kosong jika Anda tidak ingin mengubah password</i>
+                    <%= f.label "Katasandi" %> <i>biarkan kosong jika Anda tidak ingin mengubah password</i>
                     <%= f.password_field :password, autocomplete: "off" %></br>
                     <% if @minimum_password_length %>
                     <br />
-                    <em><%= @minimum_password_length %> characters minimum</em>
+                    <em>Minimal <%= @minimum_password_length %> Karakter</em>
                     <% end %>
                   </div>
 
                   <div class="input-field">
-                    <%= f.label :password_confirmation %><br />
+                    <%= f.label "Konfirmasi Katasandi" %><br />
                     <%= f.password_field :password_confirmation, autocomplete: "off" %></br>
                   </div>
 
                   <div class="input-field">
-                    <%= f.label :current_password %> <i>masukan password Anda untuk mengubahnya</i><br />
+                    <%= f.label "Katasandi Saat Ini" %> <i>masukan password Anda untuk mengubahnya</i><br />
                     <%= f.password_field :current_password, autocomplete: "off" %></br>
                   </div>
 
