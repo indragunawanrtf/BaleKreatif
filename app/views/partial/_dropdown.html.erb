@@ -1,22 +1,32 @@
 <ul id="dropdown1" class="dropdown-content hover">
+  <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'Profile', profile_balekreatif_path%></li>
+</ul>
+
+<ul id="dropdown2" class="dropdown-content hover">
   <li><a href="#!">Pendidikan</a></li>
   <li><a href="#!">Sosial</a></li>
   <li><a href="#!">Keagamaan</a></li>
   <li><a href="#!">Ekonomi</a></li>
 </ul>
 
-<ul id="dropdown2" class="dropdown-content hover">
+<ul id="dropdown3" class="dropdown-content hover">
   <li><a href="#!">Program Anak Yatim</a></li>
   <li><a href="#!">Peduli Anak Jalanan</a></li>
   <li><a href="#!">Panti Sosial</a></li>
   <li><a href="#!">Subuh Berjama'ah</a></li>
 </ul>
 
-<ul id="dropdown3" class="dropdown-content hover">
+<ul id="dropdown4" class="dropdown-content hover">
   <li><%= link_to "Insert Berita", new_post_path %></li>
   <% Category.all.each do |c| %>
   <li>
   	<%= link_to c.name, posts_path(category: c.name), class: "link" %>
   </li>
   <% end %>
+</ul>
+
+<ul id="dropdown5" class="dropdown-content hover"> 
+  <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+  <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, data: { confirm: "Apakah Kamu Yakin Ingin Keluar?" } %></li>
 </ul>
