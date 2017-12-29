@@ -27,6 +27,7 @@
 </ul>
 
 <ul id="dropdown5" class="dropdown-content hover"> 
-  <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-  <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, data: { confirm: "Apakah Kamu Yakin Ingin Keluar?" } %></li>
+  <li><%= link_to "Profile Saya", edit_user_registration_path %></li>
+  <li><%= link_to "Ubah Password", edit_user_password_path %></li>
+  <li><%= link_to "Keluar", destroy_user_session_path, method: :delete, data: { confirm: "Apakah Kamu Yakin Ingin Keluar?" } %></li>
 </ul>

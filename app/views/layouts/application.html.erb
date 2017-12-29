@@ -17,6 +17,10 @@
   <% end %>
   <%= render 'partial/fab' %>
 
+  <% if current_user %>
+    <%= auto_session_timeout_js %>
+  <% end %>
+  
   <div class="container">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
