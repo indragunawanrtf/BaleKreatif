@@ -7,12 +7,12 @@ en:
       send_instructions: "Anda akan menerima email berisi petunjuk cara mengonfirmasi alamat email Anda dalam beberapa menit."
       send_paranoid_instructions: "Jika alamat email Anda ada di database kami, Anda akan menerima email berisi petunjuk bagaimana cara mengkonfirmasi alamat email Anda dalam beberapa menit."
     failure:
-      already_authenticated: "Kamu sudah masuk"
+      already_authenticated: "Yay, Kamu berhasil masuk"
       inactive: "Akun anda belum diaktifkan"
-      invalid: "Tidak valid %{authentication_keys} atau kata sandi."
+      invalid: "%{authentication_keys} atau password tidak valid."
       locked: "Akun anda terkunci"
       last_attempt: "Anda memiliki satu langkah lagi sebelum akun Anda terkunci."
-      not_found_in_database: "Tidak valid %{authentication_keys} atau katakunci."
+      not_found_in_database: "%{authentication_keys} atau password tidak valid."
       timeout: "Sesi Anda akan berakhir. Silakan masuk lagi untuk melanjutkan."
       unauthenticated: "Anda harus masuk atau mendaftar sebelum melanjutkan."
       unconfirmed: "Anda harus mengkonfirmasi alamat email Anda sebelum melanjutkan."
@@ -26,12 +26,12 @@ en:
       email_changed:
         subject: "Email Berubah"
       password_change:
-        subject: "Katakunci Berubah"
+        subject: "Password Berubah"
     omniauth_callbacks:
       failure: "Tidak bisa mengotentikasi Anda dari %{kind} karena \"%{reason}\"."
       success: "Berhasil diautentikasi dari %{kind} akun."
     passwords:
-      no_token: "Anda tidak dapat mengakses halaman ini tanpa berasal dari email pengaturan ulang kata sandi. Jika Anda berasal dari email penyetelan ulang kata sandi, pastikan Anda menggunakan URL lengkap yang diberikan."
+      no_token: "Anda tidak dapat mengakses halaman ini tanpa berasal dari email pengaturan ulang password. Jika Anda berasal dari email penyetelan ulang kata sandi, pastikan Anda menggunakan URL lengkap yang diberikan."
       send_instructions: "Anda akan menerima email berisi instruksi tentang cara mereset kata sandi Anda dalam beberapa menit."
       send_paranoid_instructions: "Jika alamat email Anda ada di database kami, Anda akan menerima link pemulihan kata sandi di alamat email Anda dalam beberapa menit."
       updated: "Kata sandi Anda telah berhasil diubah Anda sekarang masuk"
@@ -45,7 +45,7 @@ en:
       update_needs_confirmation: "Anda memperbarui akun Anda dengan sukses, namun kami perlu memverifikasi alamat email baru Anda. Silakan periksa email Anda dan ikuti link konfirmasi untuk mengkonfirmasi alamat email baru Anda."
       updated: "Akun Anda telah berhasil diupdate."
     sessions:
-      signed_in: "Masuk dengan sukses"
+      signed_in: "Yay, Kamu berhasil masuk"
       signed_out: "Berhasil keluar."
       already_signed_out: "Berhasil keluar"
     unlocks:
@@ -56,7 +56,7 @@ en:
     messages:
       already_confirmed: "sudah dikonfirmasi, coba masuk"
       confirmation_period_expired: "perlu dikonfirmasi di dalam %{period}, mohon minta yang baru"
-      expired: "has expired, please request a new one"
+      expired: "sudah kedaluwarsa, mohon permintaan yang baru"
       not_found: "tidak ditemukan"
       not_locked: "tidak terkunci"
       not_saved:

@@ -12,7 +12,7 @@
                     <b><h5>DAFTAR AKUN BARU SEKARANG</h5></b>
                     <div class="divider"></div></br>
                     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-                    <%= devise_error_messages! %>
+                    <%= render 'partial/message_devise' %>
                     <div class="form-input row">
                       <div class="input-field">
                         <%= f.label :email %>
@@ -34,16 +34,17 @@
                       </div>
                       
                       <div class="row">
-                      <div class="actions center">
-                        <%= f.submit "Daftar", class: "btn waves-effect waves-light pink darken-1"%>
-                      </div></br>
-                      <%- if devise_mapping.omniauthable? %>
-                      <%- resource_class.omniauth_providers.each do |provider| %>
-                      <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn waves-effect waves-light blue" %>
-                      <% end -%>
-                      <% end -%>
-                      <% end %>
-                    </div>
+                        <div class="actions center">
+                          <%= f.submit "Daftar", class: "btn waves-effect waves-light pink darken-1"%>
+                        </div></br>
+                        <%- if devise_mapping.omniauthable? %>
+                        <%- resource_class.omniauth_providers.each do |provider| %>
+                        <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn waves-effect waves-light blue" %>
+                        <% end -%>
+                        <% end -%>
+                        <% end %>
+                        <h6>Sudah Punya Akun? <%= link_to "Login Disini", new_user_session_path %></h6>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -12,7 +12,7 @@
                   <div class="divider"></div></br>
 
                   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-                  <%= devise_error_messages! %>
+                  <%= render 'partial/message_devise' %>
 
                   <div class="input-field">
                     <%= f.label :email %>
