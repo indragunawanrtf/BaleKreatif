@@ -8,7 +8,7 @@
             <div class="login-form">
               <div class="card hoverable">
                 <div class="card-content blue-grey lighten-5">
-                  <span class="card-title center">
+                  <span class="card-title">
                     <b><h5>SILAKAN LOGIN</h5></b>
                     <div class="divider"></div></br>
                     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -30,22 +30,29 @@
                     <% end %>
 
                     <div class="actions">
-                      <%= f.submit "Log in", class: "btn waves-effect waves-light pink darken-1" %>
-                    </div></br>
-                    <%- if devise_mapping.omniauthable? %>
-                    <%- resource_class.omniauth_providers.each do |provider| %>
-                    <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn waves-effect waves-light blue" %>
-                    <% end -%>
-                    <% end -%>
-                    <% end %>
-
-                    <h6>Tidak Punya Akun? <%= link_to "Daftar Disini", new_user_registration_path %></h6>
+                      <%= f.submit "Log in", class: "btn c-btn c-btn--large c-btn--red c-btn--block" %>
+                    </div>
+                  <br>
+                  <div class="c-separator">
+                    <span class="c-separator__text">ATAU</span>
                   </div>
+                  </br>
+                  <%- if devise_mapping.omniauthable? %>
+                    <%- resource_class.omniauth_providers.each do |provider| %>
+                      <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn c-btn c-btn--large c-btn--facebook c-btn--block" %>
+                      <% end -%>
+                    <% end -%>
+                  <% end %>
+                  <br>
+                  <h6>Tidak Punya Akun? <%= link_to "Daftar Disini", new_user_registration_path %></h6>
+                  <br>
+                  <%= render "devise/shared/links" %>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>

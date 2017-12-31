@@ -32,3 +32,91 @@ main {
 select{
 	display: inline-block;
 }
+
+.card .card-title{
+	font-size: 12px;
+}
+
+// BUTTON
+.c-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 7px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  overflow: visible;
+  border-radius: 2px;
+  -webkit-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+  -o-transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+  transition: color .3s ease-out, opacity .3s ease-out, background .3s ease-out;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fafafa;
+  color: #FFFFFF;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: auto;
+  height: auto;
+  letter-spacing: 0;
+}
+
+.c-btn--large {
+  font-size: 16px;
+  padding: 10px 30px;
+}
+
+.c-btn--red {
+  background-color: #d71149;
+  border-color: #d71149;
+
+  &:hover{
+  	background-color: #d71149;
+  }
+}
+
+.c-btn--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+
+  &:hover{
+  	background-color: #3b5998;
+  }
+}
+
+.c-btn--block {
+  display: block;
+  width: 100%;
+}
+
+.c-separator{
+	position: relative;
+	text-align: center;
+
+	&__text {
+	  font-size: 14px;
+	  line-height: 1.4;
+	  background: #eceff1;
+	  color: #bbb;
+	  padding: 0 1em;
+	  position: relative;
+	  z-index: 1;
+	}
+
+	&::before {
+	  background: #ddd;
+	  content: "";
+	  display: block;
+	  height: 1px;
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  z-index: 0;
+	}
+}

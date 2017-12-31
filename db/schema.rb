@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2017_12_30_211136) do
     t.string "author"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
     t.integer "category_id"
   end
 
@@ -59,10 +60,6 @@ ActiveRecord::Schema.define(version: 2017_12_30_211136) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.string "unconfirmed_email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
