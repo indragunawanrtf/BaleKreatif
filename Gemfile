@@ -30,18 +30,25 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'browser-timezone-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 gem 'materialize-sass'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-gem 'devise'
 gem 'simple_form'
 gem "font-awesome-rails"
-gem "figaro"
 gem 'auto-session-timeout'
-gem 'omniauth-facebook'
 gem 'toastr-rails'
+
+gem 'trestle'
+gem 'trestle-auth'
+gem 'trestle-tinymce'
+
+gem 'devise'
+gem "figaro"
+gem 'omniauth-facebook'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

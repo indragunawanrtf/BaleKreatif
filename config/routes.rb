@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :posts, :profile
   root 'posts#index'
-  get 'profile/balekreatif', to: 'profile#index'
+  get 'profile', to: 'profile#index'
 
   match 'active'  => 'sessions#active',  via: :get
   match 'timeout' => 'sessions#timeout', via: :get

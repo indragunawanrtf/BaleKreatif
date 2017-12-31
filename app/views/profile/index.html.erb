@@ -1,1 +1,5 @@
-<h1>Profile</h1>
+<% @profile.each do |p|%>
+	<center><%= image_tag("bale.png") %></center>
+	<h1><center><%= p.title %></center></h1>
+	<p><%= p.description %></p>
+<% end %>

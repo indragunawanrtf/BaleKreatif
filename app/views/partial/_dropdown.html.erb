@@ -1,6 +1,6 @@
 <ul id="dropdown1" class="dropdown-content hover">
   <li><%= link_to 'Home', root_path%></li>
-  <li><%= link_to 'Profile', profile_balekreatif_path%></li>
+  <li><%= link_to 'Profile', profile_index_path%></li>
 </ul>
 
 <ul id="dropdown2" class="dropdown-content hover">
@@ -18,7 +18,6 @@
 </ul>
 
 <ul id="dropdown4" class="dropdown-content hover">
-  <li><%= link_to "Insert Berita", new_post_path %></li>
   <% Category.all.each do |c| %>
   <li>
   	<%= link_to c.name, posts_path(category: c.name), class: "link" %>

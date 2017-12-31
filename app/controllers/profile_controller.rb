@@ -8,7 +8,4 @@ class ProfileController < ApplicationController
 		
 	end
 
-	def new
-		
-	end
 end
