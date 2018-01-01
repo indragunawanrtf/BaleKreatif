@@ -14,6 +14,7 @@
   <%= render 'partial/navbar' %>
   <% if controller.controller_name == "posts" && controller.action_name == "index" %>
     <%= render 'partial/banner' %>
+    <h3><b><center>KABAR BERITA</center></b></h3>
   <% end %>
   <%= render 'partial/fab' %>
 
@@ -21,7 +22,7 @@
     <%= auto_session_timeout_js %>
   <% end %>
   
-  <div class="container">
+  <div class="">
     <%= render 'partial/message' %>
     <%= yield %>
   </div>

@@ -5,7 +5,25 @@
     <h4 class="center-align">"Kategori Berita Yang Anda Pilih Saat Ini Tidak Tersedia"</h4>
   </div>
 <% else %>
+<div class="row">
 	<% @posts.each do |p| %>
-		<h2><%= link_to p.title, post_path(p) %></h2>
+		<%= link_to p do %>
+		<div class="col s6 m3">
+			<div class="card small">
+				<div class="card-image waves-effect waves-block waves-light">
+				<%=  image_tag p.image.url %>
+				</div>
+				<div class="card-content">
+					<span class="card-title grey-title text-darken-4">
+						<h6><%= p.title %></h6>
+						<h6>Oleh: <%= p.author %></h6>
+					</span>
+				</div>
+			</div>
+		</div>
+		<% end %>
 	<% end %>
 <% end %>
+</div>
+
+<%= render 'partial/promotion' %>
