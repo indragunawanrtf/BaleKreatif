@@ -9,16 +9,12 @@ Trestle.resource(:posts) do
     column :description
     column :author
     column :category
-    column :image
   end
 
-
-  form do
+  form do |f|
     text_field :title
-    text_field :description
+    text_area :description
     text_field :author
     file_field :image
-    text_field :created_at
-    text_field :updated_at
   end
 end
