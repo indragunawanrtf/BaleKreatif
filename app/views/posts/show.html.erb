@@ -1,7 +1,8 @@
-<center><%= image_tag @post.image.url, class: 'card large' %></center>
-<h3><%= @post.title %></h3>
-<p><b><%= @post.created_at.strftime("%A, %d %B %Y %H:%M:%S") %></b></p>
-<h5>Penulis: <%= @post.author %></h5>
-<p><%= @post.description %></p>
-
-<%= link_to "Back", root_path %>
+<div class="container">
+	<center><%= image_tag @post.image.url, class: 'card large' %></center>
+	<h3><%= @post.title %></h3>
+	<p><b><%= @post.created_at.strftime("%A, %d %B %Y %H:%M:%S") %></b></p>
+	<h5>Penulis: <%= @post.author %></h5>
+	<p><%= @post.description %></p>
+	<%= link_to "Back", root_path %>
+</div>

@@ -13,13 +13,13 @@
 <body>
   <%= render 'partial/navbar' %>
   <% if controller.controller_name == "posts" && controller.action_name == "index" %>
-    <%= render 'partial/banner' %>
-    <h3><b><center>KABAR BERITA</center></b></h3>
+  <%= render 'partial/banner' %>
+  <h3><b><center>KABAR BERITA</center></b></h3>
   <% end %>
   <%= render 'partial/fab' %>
 
   <% if current_user %>
-    <%= auto_session_timeout_js %>
+  <%= auto_session_timeout_js %>
   <% end %>
   
   <div class="">
@@ -37,6 +37,9 @@
   $('.dropdown-button').dropdown('open');
   $(document).ready(function() {
     $('select').material_select();
+  });
+  $(document).ready(function(){
+    $('.slider').slider();
   });
 </script>
 </html>
