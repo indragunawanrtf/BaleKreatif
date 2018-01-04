@@ -43,6 +43,7 @@ gem 'toastr-rails'
 
 gem 'trestle'
 gem 'trestle-auth'
+gem 'trestle-search'
 gem 'trestle-tinymce'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 

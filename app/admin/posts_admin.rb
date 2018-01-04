@@ -3,6 +3,10 @@ Trestle.resource(:posts) do
     item :posts, icon: "fa fa-clipboard", group: :content
   end
 
+  search do |s|
+    Post.where("title ILIKE ?", "%#{s}%")
+  end
+
   table do
     column :id
     column :title

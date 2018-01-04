@@ -3,6 +3,10 @@ Trestle.resource(:programs) do
     item :programs, icon: "fa fa-database", group: :content
   end
 
+  search do |s|
+    Program.where("title ILIKE ?", "%%#{s}")
+  end
+
   table do
     column :id
     column :title

@@ -3,6 +3,10 @@ Trestle.resource(:users) do
     item :users, icon: "fa fa-users", group: :users
   end
 
+  search do |s|
+    User.where("name ILIKE ?", "%#{s}%")
+  end
+
   table do
     column :id
     column :email
