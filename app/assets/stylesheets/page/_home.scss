@@ -1,0 +1,56 @@
+.banner{
+	width: 100%;
+	height: 36em;
+	overflow: hidden;
+	display: block;
+	background-color: #333333;
+	background: url(https://1.bp.blogspot.com/-kvIInbRs21c/Vz8hBMNkyuI/AAAAAAAAAgE/Rh0DSP0QPnweXQ4FK-oY2KhIPdeAKPpRQCLcB/s1600/20160306_063119.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+
+	.overlay{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: #000000a1;
+		z-index: 1;
+	}
+
+	&__information{
+		float: left;
+		width: 50%;
+		display: block;
+		z-index: 9;
+		position: absolute;
+		margin-left: 5em;
+		margin-top: 10em;
+
+		.title{
+			width: 100%;
+			display: inline-block;
+			margin-bottom: 10px;
+
+			span{
+				font-size: 2em;
+				color: #FFFFFF;
+				font-weight: 700;
+			}
+		}
+
+		.description{
+			width: 100%;
+			display: inline-block;
+			margin-bottom: 15px;
+
+			p{
+				font-size: 16px;
+				color: #FFFFFF;
+				font-weight: 300;
+			}
+		}
+	}
+}
